@@ -4,14 +4,13 @@
       "Bash(gh api:*)",
       "Bash(curl:*)",
       "Bash(test:*)",
-      "Bash(git init:*)",
-      "Bash(~/.claude/commands/iniGit.md)",
-      "Bash(~/.claude/commands/iniPy.md)",
-      "Bash(conda env list:*)",
-      "Bash(conda create:*)",
+      "Bash(~/.claude/*)",
+      "Bash(conda:*)",
+      "PowerShell(conda:*)",
       "Bash(where:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git:*)",
+      "PowerShell(git:*)",
+      "Bash(gh auth login:*)"
     ]
   }
 }
