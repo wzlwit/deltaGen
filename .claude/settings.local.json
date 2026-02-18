@@ -1,7 +1,6 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh api:*)",
       "Bash(curl:*)",
       "Bash(test:*)",
       "Bash(~/.claude/*)",
@@ -10,7 +9,22 @@
       "Bash(where:*)",
       "Bash(git:*)",
       "PowerShell(git:*)",
-      "Bash(gh auth login:*)"
+      "Bash(python:*)",
+      "Bash(pip:*)",
+      "PowerShell(pip:*)",
+      "PowerShell(python:*)",
+      "Bash(gh:*)",
+      "PowerShell(gh:*)",
+      "Bash(c:/users/zhaolong/.claude/*)",
+      "PowerShell(c:/users/zhaolong/.claude/*)",
+      "Read(c:/users/zhaolong/.claude/**)",
+      "Edit(c:/users/zhaolong/.claude/**)",
+      "Write(c:/users/zhaolong/.claude/**)",
+      "Bash(C:/gitRepos/*)",
+      "PowerShell(C:/gitRepos/*)",
+      "Read(C:/gitRepos/**)",
+      "Edit(C:/gitRepos/**)",
+      "Write(C:/gitRepos/**)"
     ]
   }
 }

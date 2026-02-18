@@ -4,32 +4,41 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-deltaGen is a Python tool for reading various file formats (CSV, Parquet, Delta tables) and saving them as Delta tables with configurable partitioning strategies.
+deltaGen is a Python tool for reading various file formats (CSV, Parquet, Delta tables) and saving them as Delta tables with configurable partitioning strategies. It includes both a GUI (PyQt6) and CLI interface.
 
 ## Tech Stack
 
-- Python with PySpark and delta-spark
-- Poetry for dependency management
+- Python 3.13+ with PyQt6 for GUI
+- PySpark and delta-spark for data processing (planned)
+- setuptools for packaging
 
 ## Common Commands
 
 ```bash
 # Install dependencies
-poetry install
+pip install -e .
+
+# Run the GUI
+python src/main.py
+# or after install:
+deltagen-gui
 
 # Run tests
-poetry run pytest
+pytest tests/ -v
 
 # Run single test
-poetry run pytest tests/test_file.py::test_name -v
-
-# Run the CLI (once implemented)
-poetry run deltagen <input_path> <output_path>
+pytest tests/test_file.py::test_name -v
 ```
 
 ## Architecture
 
+### GUI (`src/`)
+- **main.py**: PyQt6 application entry point with `MainWindow`
+- **widgets/**: Custom PyQt6 widget classes
+- **dialogs/**: Dialog window classes
+- **resources/**: QSS stylesheets and assets
+
+### Backend (planned)
 - **readers/**: File format readers (CSV, Parquet, Delta)
 - **writers/**: Delta table writer with partitioning logic
 - **partitioners/**: Partitioning strategy implementations
-- **cli.py**: Command-line interface entry point
