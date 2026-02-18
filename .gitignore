@@ -24,3 +24,12 @@ out/
 
 # Logs
 *.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.eggs/
+*.egg
