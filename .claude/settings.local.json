@@ -10,7 +10,8 @@
       "Bash(conda env list:*)",
       "Bash(conda create:*)",
       "Bash(where:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
