@@ -33,3 +33,6 @@ __pycache__/
 venv/
 .eggs/
 *.egg
+
+# Claude Code (installed via /skicmd)
+.claude/commands/skicmd.md
